@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Heebo";
+}
+
+body{
+
+}
+
+#check{
+    display: none;
+}
+
+.logo-header{
+    display: flex;
+    align-items: center;
+}
+
+.logo-header img{
+    width: 3rem;
+}
+
+.header-brand{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-left: .8rem;
+    color: black;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/2023-BMW-M4-CSL-9.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-menu{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    
+    padding: .25rem 1.5rem;
+    z-index: 1;
+}
+
+.menu-icon img{
+    width: 1.5rem;
+}
+
+.menu-icon{
+    position: absolute;
+    right: 1rem;
+    top: 1.2rem;
+}
+
+.nav-menu ul{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 4rem;
+    left: -100%;
+    transition: all .5s;
+}
+
+.nav-menu ul li{
+    font-weight: 600;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.nav-menu ul a{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#check:checked ~ ul{
+    left: 0;
+    display: block;
+}
+
+.header-content{
+    height: 100vh;
+    width: 100%;
+   
+    text-align: center;
+}
+
+.header-content-txt{
+    padding: 2rem 1rem;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-top: 10%;
+    transition-duration: 1s;
+}
+
+.header-content-txt h1{
+    font-size: 3rem;
+}
+
+.header-content-txt p{
+    font-size: 1.3rem;
+}
+
+.nav-menu a:hover{
+    text-decoration: underline ;
+}
+
+.logo-header a:hover{
+    text-decoration: none;
+}
+
+.cars-model{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.cars-model h2{
+    font-size: 2rem;
+    position: absolute;
+    left: 1rem;
+    
+}
+
+.container-slide{
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    box-shadow: 0 10px 90px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 1rem;
+}
+
+.slider{
+    /* height: 20rem; */
+    width: 300%;
+    display: flex;
+    align-items: flex-start;
+    margin-left: -100%;
+}
+
+.slider-section{
+    width: 100%;
+    text-align: center;
+}
+
+.slider-section-text{
+    padding: 3rem;
+}
+
+.slider-section-text h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.slider-section-text p{
+    font-size: 1rem;
+}
+
+.slider-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.slider-btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-btn:hover{
+    background: rgb(255, 255, 255);
+}
+
+.slider-btn-right{
+    right: 10px;
+}
+
+.slider-btn-left{
+    left: 10px;
+}
+
+.news{
+    padding: 2rem;
+}
+
+.news-container{
+    justify-content: center;
+    
+}
+
+.news-container img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.news-tittle{
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1rem
+}
+
+.news-container .card-txt{
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+}
+
+footer{
+    width: 100%;
+    height: 5rem;
+    background-color: black;
+    padding: 2rem 4rem 4rem 4rem;
+}
+
+footer p{
+    color: white;
+}
+
+
+@media screen and (min-width:768px){
+
+    .menu-icon{
+        display: none;
+    }
+    .nav-menu{
+        justify-content: space-between;
+        height: 6rem;
+    }
+
+    .header-brand{
+        display: flex;
+        margin-right: 4rem;
+    }
+
+    .nav-menu ul{
+        display: flex;
+        align-items: center;
+        height: 4rem;
+        position: relative;
+        transition: none;
+        left: 0;
+        top: 0;
+        background-color: transparent;
+    }
+
+    .nav-menu ul li{
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0 1.5rem;
+    }
+
+    .header-content-txt{
+        width: 100%;
+        height: 100vh;
+        text-align: start;
+        color: white;
+        padding: 12rem 50% 0rem 2.5rem;
+       
+    }
+
+    .cars-model{
+
+        
+    }
+
+    .cars-model h2{
+       font-size: 2rem;
+    }
+
+    .container-slide{
+        max-width: 1500px;
+        width: 90%;
+    }
+
+    .slider{
+        height: 28rem;
+    }
+
+    .slider-section{
+        display: flex;
+        text-align: center;
+    }
+
+    .slider-section-text{
+        width: 40%;
+        padding-right: 4rem;
+    }
+
+    .slider-section-text p{
+        font-size: 1.2rem;
+    }
+    
+    .slider-img{
+        object-fit: cover;
+        width: 60%;
+    }
+
+    .news{
+        
+    }
+
+    .news-container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .news-container img{
+        /* max-width: 1000px; */
+        height: auto;
+    }
+ 
+    .news-tittle{
+        grid-column: 2/5;
+    }
+
+    .new-card-1{
+        grid-column: 2/5;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .new-card-2{
+        grid-column: 2/3;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+    }
+}
